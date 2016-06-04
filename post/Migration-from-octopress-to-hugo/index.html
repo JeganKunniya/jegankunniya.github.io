@@ -1,0 +1,598 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>Migration from octopress to hugo</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.15" />
+        
+
+
+        
+        
+            
+        
+
+        
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:title" content="Migration from octopress to hugo"/>
+<meta name="twitter:description" content="Introduction I started blogging on January 1, 2014 as a hobby and to put a check on my discipline with planned vs realized. As I din&rsquo;t had much exposure to blog and blog generators, I started with Google&rsquo;s blogger and blogged about my achievements on a montly basis. Once I gained some confidence on blogging and having decided to blog on a regular basis, I purchased a domain. Then I got introduced to the concept of static site generators and github-pages in the form of Octopress when my mentor had migrated to it."/>
+<meta name="twitter:site" content="@JeganKunniya"/>
+
+
+        <meta property="og:title" content="Migration from octopress to hugo" />
+<meta property="og:description" content="Introduction I started blogging on January 1, 2014 as a hobby and to put a check on my discipline with planned vs realized. As I din&rsquo;t had much exposure to blog and blog generators, I started with Google&rsquo;s blogger and blogged about my achievements on a montly basis. Once I gained some confidence on blogging and having decided to blog on a regular basis, I purchased a domain. Then I got introduced to the concept of static site generators and github-pages in the form of Octopress when my mentor had migrated to it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://jegankunniya.github.io/post/Migration-from-octopress-to-hugo/" />
+
+
+<meta property="og:updated_time" content="2016-05-08T00:47:43&#43;05:30"/>
+
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="Migration from octopress to hugo">
+<meta itemprop="description" content="Introduction I started blogging on January 1, 2014 as a hobby and to put a check on my discipline with planned vs realized. As I din&rsquo;t had much exposure to blog and blog generators, I started with Google&rsquo;s blogger and blogged about my achievements on a montly basis. Once I gained some confidence on blogging and having decided to blog on a regular basis, I purchased a domain. Then I got introduced to the concept of static site generators and github-pages in the form of Octopress when my mentor had migrated to it.">
+
+
+<meta itemprop="dateModified" content="2016-05-08T00:47:43&#43;05:30" />
+<meta itemprop="wordCount" content="296">
+
+
+
+<meta itemprop="keywords" content="Hugo,Octopress," />
+
+        
+
+        
+
+        
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="/css/google-font.css" />
+            <link rel="stylesheet" href="/css/font-awesome.min.css" />
+            <link rel="stylesheet" href="/css/main.css" />
+            <link rel="stylesheet" href="/css/add-on.css" />
+            <link rel="stylesheet" href="/css/monokai-sublime.css">
+        
+
+        
+
+        
+        
+        
+            
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-60331136-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+        
+    </head>
+    <body>
+
+        
+        <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+        <h2><a href="/">Jegan Kunniya&#39;s WebLog</i></a></h2>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                        
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/categories/">
+                        
+                            <i class="fa fa-hashtag">&nbsp;</i>Categories
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/about/">
+                        
+                            <i class="fa fa-user">&nbsp;</i>Who am I?
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="q" value="site:http://jegankunniya.github.io/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="q" value="site:http://jegankunniya.github.io/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                
+                                    <i class="fa fa-newspaper-o">&nbsp;</i>
+                                
+                                Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/">
+                            <h3>
+                                
+                                    <i class="fa fa-hashtag">&nbsp;</i>
+                                
+                                Categories
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about/">
+                            <h3>
+                                
+                                    <i class="fa fa-user">&nbsp;</i>
+                                
+                                Who am I?
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    <li>
+                        <a href="http://jegankunniya.github.io/post/Migration-from-octopress-to-hugo/"><p>Migration from octopress to hugo</p></a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li><a href="//twitter.com/share?url=http%3a%2f%2fjegankunniya.github.io%2fpost%2fMigration-from-octopress-to-hugo%2f&text=Migration%20from%20octopress%20to%20hugo&via=JeganKunniya" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fjegankunniya.github.io%2fpost%2fMigration-from-octopress-to-hugo%2f&title=Migration%20from%20octopress%20to%20hugo" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=http%3a%2f%2fjegankunniya.github.io%2fpost%2fMigration-from-octopress-to-hugo%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+    <header>
+    <div class="title">
+        
+            <h1><a href="http://jegankunniya.github.io/post/Migration-from-octopress-to-hugo/">Migration from octopress to hugo</a></h1>
+            
+        
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2016-05-08'>
+            May 8, 2016</time>
+        <span class="author"></span>
+        
+            <p>2 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+    <section id="social-share">
+        <ul class="icons">
+            
+
+
+<li><a href="//twitter.com/share?url=http%3a%2f%2fjegankunniya.github.io%2fpost%2fMigration-from-octopress-to-hugo%2f&text=Migration%20from%20octopress%20to%20hugo&via=JeganKunniya" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fjegankunniya.github.io%2fpost%2fMigration-from-octopress-to-hugo%2f&title=Migration%20from%20octopress%20to%20hugo" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=http%3a%2f%2fjegankunniya.github.io%2fpost%2fMigration-from-octopress-to-hugo%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+        </ul>
+    </section>
+    
+
+    <div id="content">
+        
+
+<h2 id="introduction:5c8eaddc2a845455880f96e7e6e57c96">Introduction</h2>
+
+<p>I started blogging on January 1, 2014 as a hobby and to put a check on my discipline with planned vs realized. As I din&rsquo;t had much exposure to blog and blog generators, I started with Google&rsquo;s <a href="http://jegankunniya.blogspot.com">blogger</a> and blogged about my achievements on a montly basis.</p>
+
+<p>Once I gained some confidence on blogging and having decided to blog on a regular basis, I purchased a domain. Then I got introduced to the concept of <strong>static site generators</strong> and <em>github-pages</em> in the form of Octopress when my <a href="http://p7h.org">mentor</a> had migrated to it.</p>
+
+<p>Out of curiousity, I wanted to understand what octopress is and there started my journey towards static blogging.</p>
+
+<h3 id="blogging-with-octopress:5c8eaddc2a845455880f96e7e6e57c96">Blogging with Octopress</h3>
+
+<p>Octopress is one of a very cool candidate in the static site generator space and enables us with a loads of configuration options. The content is written in <em>Markdown</em> and octopress converts it into an <em>html</em> page that can then be publised to github pages. This provisioning enables us to fully manage our content been published. It also enables us to import the blogs from blogger and wordpress and hence there were a lot of transitions towards static blogging.</p>
+
+<p>Due to my lack of commitment, I had failed to utilize the openness. Also, the lack of knowledge on static blogging and git brought the procrastinator in me.</p>
+
+<p>The pain points to me was the local setup of octopress. Setting up <em>Ruby</em> and <em>octopress</em> that shall be published to <em>gh-pages</em> for me, was not smooth. I must admit that it took enough time to make <em>static site generators</em> and <em>github-pages</em> work for me with a custom domain.</p>
+
+<p>These pain points and procrasting behavior left me to look out for options in the same space and ended up with option like <strong>Hugo</strong> and <strong>Pelican</strong>.</p>
+
+    </div>
+
+    <footer>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-hashtag">&nbsp;</i>
+                    
+
+                    
+                        Categories
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/hugo'>Hugo</a></li>
+    
+        <li><a href='/categories/octopress'>Octopress</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+<ul class="actions pagination">
+    
+
+    
+</ul>
+
+
+
+
+    </div>
+    
+<section id="sidebar">
+
+    
+        <section id="intro">
+            
+            
+                
+                    <img src="/img/profile/JK_Profile.jpg" class="intro-circle" width="70px" alt="Jegan Kunniya&#39;s Profile Pic" />
+                
+            
+            
+                <header>
+                    <h2>Jegan Kunniya</h2>
+                    <p>Manifestations of the Software art</p>
+                </header>
+            
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//twitter.com/JeganKunniya" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+<li><a href="//github.com/jegankunniya" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/jegan-kunniya-19616a20" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//plus.google.com/+JeganKunniya" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <ul class="posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="http://jegankunniya.github.io/post/Migration-from-octopress-to-hugo/">Migration from octopress to hugo</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2016-05-08'>
+                                    May 8, 2016</time>
+                            </header>
+                        </article>
+                    </li>
+                
+
+                
+            </ul>
+        </section>
+
+    
+    
+    
+    
+        <section id="categories">
+            <ul class="posts">
+                <header>
+                    <h3><a href="/categories/">Categories</a></h3>
+                </header>
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/hugo/">Hugo</a>
+                                <span style="float:right;">1</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/octopress/">Octopress</a>
+                                <span style="float:right;">1</span>
+                            </header>
+                        </article>
+                    </li>
+                
+            </ul>
+        </section>
+    
+
+    
+        
+
+    
+        <section id="footer">
+            
+        </section>
+
+</section>
+
+            </div>
+        <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+        
+
+        
+        
+            
+        
+
+        
+        
+            <script src="/js/jquery.min.js"></script>
+            <script src="/js/skel.min.js"></script>
+            <script src="/js/util.js"></script>
+            <script src="/js/main.js"></script>
+            <script src="/js/backToTop.js"></script>
+            <script src="/js/highlight.pack.js"></script>
+        
+
+        
+
+            
+            <script>hljs.initHighlightingOnLoad();</script>
+            
+    </body>
+</html>
+
