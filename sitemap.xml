@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://jegankunniya.github.io/</loc>
+    <lastmod>2016-05-08T00:47:43+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jegankunniya.github.io/post/Migration-from-octopress-to-hugo/</loc>
+    <lastmod>2016-05-08T00:47:43+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jegankunniya.github.io/about/</loc>
+    <lastmod>2016-05-07T18:47:33+05:30</lastmod>
+  </url>
+  
+</urlset>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jegan Kunniya&#39;s WebLog</title>
+    <link>http://jegankunniya.github.io/</link>
+    <description>Recent content on Jegan Kunniya&#39;s WebLog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 May 2016 00:47:43 +0530</lastBuildDate>
+    <atom:link href="http://jegankunniya.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Migration from octopress to hugo</title>
+      <link>http://jegankunniya.github.io/post/Migration-from-octopress-to-hugo/</link>
+      <pubDate>Sun, 08 May 2016 00:47:43 +0530</pubDate>
+      
+      <guid>http://jegankunniya.github.io/post/Migration-from-octopress-to-hugo/</guid>
+      <description>
+
+&lt;h2 id=&#34;introduction:5c8eaddc2a845455880f96e7e6e57c96&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;I started blogging on January 1, 2014 as a hobby and to put a check on my discipline with planned vs realized. As I din&amp;rsquo;t had much exposure to blog and blog generators, I started with Google&amp;rsquo;s &lt;a href=&#34;http://jegankunniya.blogspot.com&#34;&gt;blogger&lt;/a&gt; and blogged about my achievements on a montly basis.&lt;/p&gt;
+
+&lt;p&gt;Once I gained some confidence on blogging and having decided to blog on a regular basis, I purchased a domain. Then I got introduced to the concept of &lt;strong&gt;static site generators&lt;/strong&gt; and &lt;em&gt;github-pages&lt;/em&gt; in the form of Octopress when my &lt;a href=&#34;http://p7h.org&#34;&gt;mentor&lt;/a&gt; had migrated to it.&lt;/p&gt;
+
+&lt;p&gt;Out of curiousity, I wanted to understand what octopress is and there started my journey towards static blogging.&lt;/p&gt;
+
+&lt;h3 id=&#34;blogging-with-octopress:5c8eaddc2a845455880f96e7e6e57c96&#34;&gt;Blogging with Octopress&lt;/h3&gt;
+
+&lt;p&gt;Octopress is one of a very cool candidate in the static site generator space and enables us with a loads of configuration options. The content is written in &lt;em&gt;Markdown&lt;/em&gt; and octopress converts it into an &lt;em&gt;html&lt;/em&gt; page that can then be publised to github pages. This provisioning enables us to fully manage our content been published. It also enables us to import the blogs from blogger and wordpress and hence there were a lot of transitions towards static blogging.&lt;/p&gt;
+
+&lt;p&gt;Due to my lack of commitment, I had failed to utilize the openness. Also, the lack of knowledge on static blogging and git brought the procrastinator in me.&lt;/p&gt;
+
+&lt;p&gt;The pain points to me was the local setup of octopress. Setting up &lt;em&gt;Ruby&lt;/em&gt; and &lt;em&gt;octopress&lt;/em&gt; that shall be published to &lt;em&gt;gh-pages&lt;/em&gt; for me, was not smooth. I must admit that it took enough time to make &lt;em&gt;static site generators&lt;/em&gt; and &lt;em&gt;github-pages&lt;/em&gt; work for me with a custom domain.&lt;/p&gt;
+
+&lt;p&gt;These pain points and procrasting behavior left me to look out for options in the same space and ended up with option like &lt;strong&gt;Hugo&lt;/strong&gt; and &lt;strong&gt;Pelican&lt;/strong&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>http://jegankunniya.github.io/about/</link>
+      <pubDate>Sat, 07 May 2016 18:47:33 +0530</pubDate>
+      
+      <guid>http://jegankunniya.github.io/about/</guid>
+      <description>&lt;p&gt;Hey buddy,&lt;/p&gt;
+
+&lt;p&gt;Thanks for Stopping by.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m &lt;a href=&#34;http://jegankunniya.org&#34;&gt;Jegan Kunniya&lt;/a&gt;, Software developer from Bangalore, India. I have over 8 years of software development experience in the domain of Healthcare and Aviation systems. I will use this space primarily to publish my experiences of Software development and occasionally on general topics.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m an object oriented programmer and have been developing applications using .NET and Java. Occasionally I have developed apps using Android.&lt;/p&gt;
+
+&lt;p&gt;My recent pursuit is learning new technologies / programming constructs on &lt;a href=&#34;http://www.coursera.org&#34;&gt;Coursera&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you would like to get in touch, then reach me on my jegan[dot]kunniya[att]google&amp;rsquo;s email.&lt;/p&gt;
+
+&lt;blockquote&gt;
+    All the comments, rants and ramblings is purely mine and doesn&#39;t have any say on my present and previous organisations.
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
